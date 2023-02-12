@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: hsl(210, 36%, 96%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+  max-width: 1200px;
+  margin: 2rem auto;
+ 
+}
+
+.main-container{
+padding: 1rem;
+text-align: center;
+
+}
+.underline{
+  width: 5rem;
+  height: 0.25rem;
+  background: #c59d5f;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container{
+  max-width: 500px; 
+  display: flex;
+  margin: 2rem auto;
+}
+
+img{
+  object-fit: cover;
+  width: 250px;
+  height: 200px;
+  border: 3px solid #c59d5f;
+}
+
+
+.item-info{
+  margin: 0 10px;
+ 
+}
+.info-text{
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  border-bottom: 1px solid hsl(210, 22%, 49%);
+ 
+}
+
+.text{
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.price{
+  color: #c59d5f;
+}
+
+.btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+button{
+  background: transparent;
+  border-color: transparent;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  padding: 0.375rem 0.75rem;
+  color: #c59d5f;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  background: #c59d5f;
+  color: #fff;
+}
+
+
+@media only screen and (min-width:900px) {
+  .supes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+  }
+
+  .flex-container{
+    max-width: 500px;
+  }
+}
